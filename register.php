@@ -9,3 +9,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   echo "Registered successfully!";
 }
 ?>
+<form method="POST" onsubmit="return validateForm();">
+  <input type="email" name="email" required>
+  <input type="password" name="password" required>
+  <button type="submit">Register</button>
+</form>
+<script src="js/validate.js"></script>
