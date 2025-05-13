@@ -1,4 +1,110 @@
+/* Genel stil ayarları */
 body {
   font-family: Arial, sans-serif;
-  margin: 20px;
+  background-color: #eaeaea;
+  margin: 0;
+  padding: 0;
+}
+
+/* Sayfa başlığı */
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+/* Link stilini kaldır */
+a {
+  text-decoration: none;
+}
+
+/* Kayıt ve giriş bağlantıları */
+a.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
+}
+
+a.button-link:hover {
+  background-color: #0056b3;
+}
+
+/* Form kutusu */
+.form-container {
+  max-width: 400px;
+  margin: 60px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* Form etiket ve giriş alanları */
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container input[type="number"],
+.form-container input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Gönder butonu */
+.form-container input[type="submit"],
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.form-container input[type="submit"]:hover,
+.form-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Giriş türü seçme sayfası (login_selection.html) için özel kutu */
+.selection-container {
+  max-width: 400px;
+  margin: 100px auto;
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.selection-container h2 {
+  margin-bottom: 30px;
+}
+
+.selection-container a button {
+  width: 150px;
+  padding: 10px 15px;
+  margin: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+}
+
+.selection-container a button:hover {
+  background-color: #0056b3;
 }
